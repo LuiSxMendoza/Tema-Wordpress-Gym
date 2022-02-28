@@ -5,8 +5,13 @@ require get_template_directory() . '/inc/queries.php';
 
 //! Cuando el tema es activado
 function gym_setup() {
+
     //? Habilitar imagenes destacadas
     add_theme_support('post-thumbnails');
+
+    //? Titulos SEO
+    add_theme_support('title-tag');
+
     //? Agg img con tamaño personalizado
     add_image_size('sqare', 350, 350, true);
     add_image_size('portrait', 350, 724, true);
